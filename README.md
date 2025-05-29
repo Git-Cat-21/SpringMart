@@ -14,7 +14,7 @@ cd SpringMart
 ./mvnw spring-boot:run
 ```
 
-## Build and run with Docker image
+### Build and run with Docker image
 ```bash
 docker build . -t springmart 
 docker run -it --rm -p 8080:8080 springmart
