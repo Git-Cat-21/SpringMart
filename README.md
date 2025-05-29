@@ -8,14 +8,16 @@ This project is built using `Java`, `Spring Boot`, and `Maven`, and follows a `M
 git clone git@github.com:Git-Cat-21/SpringMart.git
 cd SpringMart
 ```
-### Build the project using Maven
+### Build and run with Maven
 ```bash
-/mvnw clean install  
+./mvnw clean install 
+./mvnw spring-boot:run
 ```
 
-### Run the application
+## Build and run with Docker image
 ```bash
-./mvnw spring-boot:run  
+docker build . -t springmart 
+docker run -it --rm -p 8080:8080 springmart
 ```
 
 ## Database Structure
