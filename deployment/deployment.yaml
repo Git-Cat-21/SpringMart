@@ -21,7 +21,7 @@ spec:
         app: example-app
     spec:
       containers:
-      - name: example-app
+      - name: example-app 
         image: gitcat21/springmart
         imagePullPolicy: Always
         ports:
