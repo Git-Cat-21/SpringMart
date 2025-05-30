@@ -20,6 +20,24 @@ docker build . -t springmart
 docker run -it --rm -p 8080:8080 springmart
 ```
 
+### Kubernetes Setup
+### Create a namespace for the app and  Deploy application and service 
+```bash
+kubectl create ns example-app
+kubectl apply -n example-app -f ./deployment
+```
+
+### Check pod status and Get the service info 
+```bash
+kubectl -n example-app get pods
+kubectl -n example-app get svc
+```
+
+### Forward port 80 of the service to local port 8080
+```bash
+kubectl port-forward svc/example-service 8080:80 -n example-app
+```
+
 ## Database Structure
 ![Database Structure](src/main/resources/templates/dbstructure.png "Database structre")
 
