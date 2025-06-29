@@ -9,7 +9,7 @@
 <body>
     <div class="container">
         <h1>Hey ${name}, your user id is ${userid}</h1>
-        <button onclick="window.location.replace('http://localhost:8080/login')">Login</button>
+        <button onclick="location.href='${pageContext.request.contextPath}/login'">Login</button>
     </div>
 </body>
 </html>

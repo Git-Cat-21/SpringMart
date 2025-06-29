@@ -42,7 +42,7 @@
     <input type="submit" value="Submit">
 </form>
 <p>Already have an account?</p>
-<button onclick="location.href='http://localhost:8080/login'">Login here</button>
+<button onclick="location.href='${pageContext.request.contextPath}/login'">Login here</button>
 
 
 </body>

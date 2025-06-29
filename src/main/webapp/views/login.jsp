@@ -28,7 +28,7 @@
 </form>
 
 <p>Don't have an account?</p>
-<button onclick="location.href='http://localhost:8080/signup'">Sign up here</button>
+<button onclick="location.href='${pageContext.request.contextPath}/signup'">Sign up here</button>
 
 </body>
 </html>
