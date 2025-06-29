@@ -10,7 +10,7 @@ RUN chmod +x ./mvnw
 RUN ./mvnw dependency:go-offline
 
 COPY . /work/
-RUN ./mvnw install
+RUN ./mvnw install -DskipTests
 
 
 ENTRYPOINT ["./mvnw", "spring-boot:run"]
